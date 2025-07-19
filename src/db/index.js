@@ -8,7 +8,7 @@ const connectDB = async () => {
         
     } catch (error) {
         console.log("MONGODB connection FAILED", error);
-        process.exit(1)
+        process.exit(1) // node js gives the access of process directly which referes the currunt app process
     }
 }
 
